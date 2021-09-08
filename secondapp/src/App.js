@@ -19,7 +19,6 @@ function App() {
     const [email, setEmail] = useState(newEmail);
     const saveEmail = (event) => {
         if (event.target.value.trim("") != "") {
-            console.log(event.target.value)
             setEmail(event.target.value);
         }
         if (event.target.value.trim("") == "") {
@@ -28,7 +27,6 @@ function App() {
     }
     const saveUserName = (event) => {
         if (event.target.value.trim("") != "") {
-            console.log(event.target.value)
             setUserName(event.target.value);
         }
         if (event.target.value.trim("") == "") {
@@ -58,8 +56,6 @@ function App() {
         while (number > randomArray.length || number < 0) {
             number = Math.floor(Math.random() * 10);
         }
-        console.log(number)
-        console.log(randomArray[number])
         setrandomSentence(randomArray[number])
 
     }
