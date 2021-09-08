@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
 import {useState} from 'react';
 
 function App() {
   let text1=' Hello Palestine'
   let text2='Hello World'
-  const [text, setText]=useState();
+  const [text, setText]= useState(text2);
   const changeText = () =>{
     if(text === text1){
       setText(text2);
@@ -17,7 +16,7 @@ function App() {
   return (
     <div> 
       <div onClick ={changeText}>
-        {text}
+        {text} 
       </div>
     </div>
   );
